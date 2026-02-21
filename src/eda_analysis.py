@@ -7,8 +7,8 @@ import os
 sns.set_theme(style="whitegrid")
 
 def run_eda():
-    db_path = 'd:/Web development Projects/Antig/data/gaming_health.db'
-    output_dir = 'd:/Web development Projects/Antig/reports/images'
+    db_path = 'd:/Web development Projects/project/data/gaming_health.db'
+    output_dir = 'd:/Web development Projects/project/reports/images'
     os.makedirs(output_dir, exist_ok=True)
     
     print("Connecting to database for EDA...")
