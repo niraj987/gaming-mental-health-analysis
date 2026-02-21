@@ -4,8 +4,8 @@ import sqlalchemy
 import time
 
 def ingest_data():
-    csv_file_path = 'd:/Web development Projects/Antig/gaming_mental_health_10M_40features.csv'
-    db_path = 'sqlite:///d:/Web development Projects/Antig/data/gaming_health.db'
+    csv_file_path = 'd:/Web development Projects/project/gaming_mental_health_10M_40features.csv'
+    db_path = 'sqlite:///d:/Web development Projects/project/data/gaming_health.db'
     
     print(f"Connecting to database: {db_path}")
     engine = sqlalchemy.create_engine(db_path)
