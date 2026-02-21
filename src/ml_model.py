@@ -10,7 +10,7 @@ import seaborn as sns
 import numpy as np
 
 def run_ml_pipeline():
-    db_path = 'd:/Web development Projects/Antig/data/gaming_health.db'
+    db_path = 'd:/Web development Projects/project/data/gaming_health.db'
     
     print("Extracting sample dataset for ML Modeling (200,000 rows)...")
     conn = sqlite3.connect(db_path)
@@ -70,7 +70,7 @@ def run_ml_pipeline():
     sns.barplot(data=feat_imp, x='Importance', y='Feature', palette='magma')
     plt.title('Feature Importances for Predicting Addiction Level')
     plt.tight_layout()
-    plt.savefig('d:/Web development Projects/Antig/reports/images/feature_importance.png', dpi=300)
+    plt.savefig('d:/Web development Projects/project/reports/images/feature_importance.png', dpi=300)
     plt.close()
     
     print("ML Pipeline completed. Check reports/images/feature_importance.png.")
